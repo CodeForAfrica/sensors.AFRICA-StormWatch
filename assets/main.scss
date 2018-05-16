@@ -1,0 +1,134 @@
+---
+---
+
+// Bootstrap | Variable overrides
+@import "variables";
+
+// Bootstrap | Required
+@import "bootstrap-4.1.1/functions";
+@import "bootstrap-4.1.1/variables";
+@import "bootstrap-4.1.1/mixins";
+
+// Bootstrap | Optional
+@import "bootstrap-4.1.1/root";
+@import "bootstrap-4.1.1/reboot";
+@import "bootstrap-4.1.1/type";
+@import "bootstrap-4.1.1/images";
+// @import "bootstrap-4.1.1/code";
+@import "bootstrap-4.1.1/grid";
+// @import "bootstrap-4.1.1/tables";
+// @import "bootstrap-4.1.1/forms";
+@import "bootstrap-4.1.1/buttons";
+@import "bootstrap-4.1.1/transitions";
+// @import "bootstrap-4.1.1/dropdown";
+// @import "bootstrap-4.1.1/button-group";
+// @import "bootstrap-4.1.1/input-group";
+// @import "bootstrap-4.1.1/custom-forms";
+// @import "bootstrap-4.1.1/nav";
+// @import "bootstrap-4.1.1/navbar";
+@import "bootstrap-4.1.1/card";
+// @import "bootstrap-4.1.1/breadcrumb";
+// @import "bootstrap-4.1.1/pagination";
+// @import "bootstrap-4.1.1/badge";
+// @import "bootstrap-4.1.1/jumbotron";
+// @import "bootstrap-4.1.1/alert";
+// @import "bootstrap-4.1.1/progress";
+@import "bootstrap-4.1.1/media";
+@import "bootstrap-4.1.1/list-group";
+// @import "bootstrap-4.1.1/close";
+// @import "bootstrap-4.1.1/modal";
+// @import "bootstrap-4.1.1/tooltip";
+// @import "bootstrap-4.1.1/popover";
+// @import "bootstrap-4.1.1/carousel";
+@import "bootstrap-4.1.1/utilities";
+// @import "bootstrap-4.1.1/print";
+
+@import "layout";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $gray-800;
+}
+
+h1,
+.h1 {
+  border-bottom: 1px solid $gray-200;
+}
+
+.navbar-dark .navbar-toggler {
+  padding-left: 0;
+  border: none;
+}
+
+.site-body {
+  background-color: $white;
+}
+
+.hero {
+
+  color: #fff;
+  text-align: center;
+
+  h1,
+  .h1 {
+    border: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    h1 {
+      font-size: $display2-size;
+    }
+
+    h2 {
+      font-size: $display4-size;
+    }
+  }
+
+  /* The image used */
+  background-image: url('/images/lake-victoria-354533_1920_with_overlay.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-footer {
+  border-top: 1px solid $gray-200;
+  background-color: $gray-100;
+  padding-top: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
+
+  .card,
+  .list-group-item {
+    padding: 0;
+    border: none;
+    background-color: $gray-100;
+  }
+
+  h2,
+  .card, {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $font-size-lg;
+  }
+
+  @include media-breakpoint-up(sm) {
+    h2,
+    .card, {
+        text-align: left;
+    }
+  }
+}
+
