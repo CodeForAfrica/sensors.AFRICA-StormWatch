@@ -1,0 +1,27 @@
+# Site settings
+name: StormWatch
+title: StormWatch
+description: >- # this means to ignore newlines until "baseurl:"
+  alerts villagers ahead of extreme storms on Africa's great lakes.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: codefortanzania
+github_username: codefortanzania
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

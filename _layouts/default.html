@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+  {{ content }}
+
+  <footer class="site-footer" role="contentinfo">
+    <section class="container px-0">
+      <article class="row">
+        <section class="col-md-6">
+          <p class="text-justify">
+            <strong>{{ site.name }}</strong> {{ site.description }}
+          </p>
+          <p class="text-justify">
+            This site is a project of
+            <a href="https://codefortanzania.org" target="_blank" rel="noopener">Code for Tanzania</a>, all content is released under a
+            <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">Creative Commons 4 Attribution</a> license. Source code is available
+            on
+            <a href="https://github.com/CodeForTanzania/StormWatch" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+          <br/>
+        </section>
+        <aside class="col-md-6 cft-related">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body pt-0">
+                  <h2 class="card-title">Our Other Projects</h2>
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item" href="https://tanzania.hurumap.org/" target="_blank" rel="noopener">HURUmap Tanzania</a>
+                    <a class="list-group-item" href="https://pesacheck.org" target="_blank" rel="noopener">PesaYetu</a>
+                    <a class="list-group-item" href="http://www.opendata.go.tz" target="_blank" rel="noopener">Open Data TZ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Our Community</h2>
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item" href="https://facebook.com/HacksHackersAfrica" target="_blank" rel="noopener">HacksHackers Africa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 cft-main">
+              <a href="https://codefortanzania.org/" target="_blank" rel="noopener">
+                <img class="img-fluid" src="images/cftanzania_primary.png" />
+              </a>
+              <p class="text-center">Supported by <br /><a href="https://codeforafrica.org" target="_blank" rel="noopener">Code for Africa</a></p>
+            </div>
+          </div>
+        </aside>
+      </article>
+    </section>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91133100-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-91133100-12');
+  </script>
+</body>
+
+</html>
