@@ -45,46 +45,105 @@
 
 @import "layout";
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  background-color: $gray-800;
+  quotes: '\201c' '\201d';
 }
 
 h1,
 .h1 {
-  border-bottom: 1px solid $gray-200;
-}
-
-.navbar-dark .navbar-toggler {
-  padding-left: 0;
-  border: none;
-}
-
-.site-body {
-  background-color: $white;
+  text-align: center;
 }
 
 .hero {
-
-  color: #fff;
+  color: $gray-400;
   text-align: center;
+  padding-left: 0;
+  padding-bottom: $spacer;
+  padding-right: 0;
+
+  .topbar {
+    color: $white;
+    font-size: $h2-font-size;
+    text-align: left;
+    background: rgba($gray-800, .25);
+    border-bottom: 1px solid darken($gray-800, 5%);
+
+    .container {
+      padding-top: $spacer * .5;
+      padding-bottom: $spacer * .5;
+    }
+
+    .logo {
+      width: 35px;
+    }
+  }
 
   h1,
   .h1 {
+    font-size: $h5-font-size;
+    font-weight: $font-weight-normal;
     border: none;
+    padding-top: $spacer * 2;
   }
-
-  @include media-breakpoint-up(sm) {
-    h1 {
-      font-size: $display2-size;
+  h2,
+  .h2 {
+    font-size: $h5-font-size;
+  }
+  .cover {
+    padding-top: $spacer;
+  }
+  .tagline,
+  .tagline {
+    h2,
+    .h2 {
+      font-size: $h1-font-size;
+      padding-bottom: $spacer * .5;
     }
 
-    h2 {
-      font-size: $display4-size;
+    .tagline-alerts,
+    .tagline-lives {
+      text-transform: uppercase;
+    }
+  }
+  .subscription-keyword:before { content: open-quote; }
+  .subscription-keyword:after  { content: close-quote; }
+  .call-to-action {
+    background-color: transparent;
+    .card-header {
+      background: $primary;
+    }
+    .card-body {
+      background: lighten($primary, 5%);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    h1,
+    .h1 {
+      font-size: $h1-font-size;
+    }
+    .logo {
+      width: 60px;
+    }
+    .cover {
+      padding-top: $spacer * 7;
+      padding-bottom: $spacer * 6;
+    }
+    .tagline {
+      h2,
+      .h2 {
+        font-size: 3.25rem;
+        text-align: left;
+        padding-bottom: $spacer * 1.25;
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+    }
+    h2,
+    .h2 {
+      font-size: $h2-font-size;
     }
   }
 
@@ -92,9 +151,6 @@ h1,
   background-image: url('/images/lake-victoria-354533_1920_with_overlay.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* Full height */
-  height: 100vh;
 
   /* Center and scale the image nicely */
   background-position: center;
